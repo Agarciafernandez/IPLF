@@ -1,7 +1,8 @@
 # IPLF
 This repository contains the implementation of the iterated posterior linearisation filter (IPLF) [1].
 
-IPLF_maneuvering.m runs an example of tracking with a maneuvering target [1]. 
+IPLF_maneuvering.m runs an example of tracking with a maneuvering target [1].
+
 IPLF_sensor_network.m runs an example of target tracking with a sensor network [1].
 
 

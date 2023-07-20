@@ -58,8 +58,6 @@ weights=[W0,Wn*ones(1,2*Nx)];
 square_error_t_tot=zeros(1,Nsteps-1);
 
 
-
-
 rms_t_series=zeros(1,Nmc);
 
 
@@ -70,11 +68,6 @@ N_it=10;
 threshold=10^(-5);
 
 N_it_t_tot=zeros(1,Nsteps-1);
-
-N_finaliza=0;
-N_converge=0;
-N_finaliza_series=zeros(1,Nmc);
-N_converge_series=zeros(1,Nmc);
 
 
 randn('seed',9)
@@ -114,9 +107,7 @@ for i=1:Nmc
             atan2(height,sqrt(pos_x^2+pos_y^2));...
             (pos_x*vel_x+pos_y*vel_y)/sqrt(pos_x^2+pos_y^2+height^2)]+noise;
         
-        
-        
-        
+              
         %IPLF update
         
         mean_pos_j=meank;

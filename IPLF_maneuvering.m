@@ -171,7 +171,8 @@ for i=1:Nmc
             mean_updated=meank+Psi_j/S_j*sub_z;
             var_updated=Pk-Psi_j/S_j*Psi_j';
             
-            %Diferencia KLD
+            %KLD between the previous Gaussian posterior density and the current
+            %Gaussian posterior density to measure convergence
             dist_k=dist_kullback(mean_pos_j,cov_pos_j,mean_updated,var_updated);
             
             if(threshold>0 && dist_k<threshold)
